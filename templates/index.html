@@ -1,1 +1,42 @@
+<html>
 
+<head>
+    <title>Прототип формы ЕП ФСА</title>
+</head>
+
+<body>
+    <h1>Форма заявки:</h1>
+    <br>
+    <form action="/result" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <p>Описание продукции:</p>
+                </td>
+                <td>Номер категории продукции:</td>
+                <td>Результат оценки:</td>
+            </tr>
+            <tr>
+                <td><textarea name='prodname' style="margin: 0px; width: 300px; height: 100px;"
+                        value="Введите описание продукции"> </textarea>
+                </td>
+                <td><input name='category' value="9300" , style="margin: 0px; width: 175px; height: 100px;"></input>
+                </td>
+                
+            <br><br>
+            <tr>
+                <td></td>
+                <td><input type="submit" , value="Отправить"></td>
+            </tr>
+
+            </td>
+
+        </table>
+    </form>
+    <h1>Результаты оценки:</h1>
+    <p>{{ result.text }}</p>
+    <p>{{ result.var }}</p>
+    <p>{{ result.recomend}}</p>
+</body>
+
+</html>
